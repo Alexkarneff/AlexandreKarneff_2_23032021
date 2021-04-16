@@ -1,9 +1,33 @@
 
 * {
     font-family: 'Raleway', sans-serif;
+    font-weight: 100;
 }
 h2{
-    font-weight: bolder;
+  font-weight:700 ;  
+}
+
+h3{
+    font-weight: 700;
+}
+
+.Marseillehebergement {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.hebergements {
+    background-color: #F2F2F2 ;
+    padding: 15px;
+    margin-bottom: 5px;
+    margin-right: 8px;
+    border-radius: 10px;
+}
+
+.populaires {
+    background-color: #F2F2F2;
+    padding: 15px;
+    border-radius: 10px;
 }
 footer {
     display: flex;
@@ -19,7 +43,7 @@ footer {
 header {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     margin-bottom: 5rem;
 }
 
@@ -48,3 +72,43 @@ a:hover {
     color: #0065FC;
 }
 
+input {
+    display: inline-block;
+    font-size: 24px;
+    padding: 8px;
+}
+button {
+    display: inline-block;
+    padding: 8px;
+    font-size: 24px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #0065FC;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+
+
+  .input-group{
+    display: table;
+    border-collapse: collapse;
+    width: 500px;
+  }
+  .input-group > div{
+    display: table-cell;
+    vertical-align: middle;  /* needed for Safari */
+  }
+  .input-group-icon{
+    width: 100px;
+    background:#F2F2F2;
+  }
+  .input-group-area{
+    width:300px;
+    border: 1px solid #ddd
+  }
+
+  .input-group-button {
+      width: auto;
+      border: none;
+  }
