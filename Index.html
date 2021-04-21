@@ -1,127 +1,175 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <script src="https://kit.fontawesome.com/4792a8a846.js" crossorigin="anonymous"></script>
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="styles.css" />
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">     
-        <title> Réservia </title>
-    </head>
+
+<head>
+    <script src="https://kit.fontawesome.com/4792a8a846.js" crossorigin="anonymous"></script>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+    <title> Réservia </title>
+</head>
 
 
-    <body>
+<body>
 
-        <header>
-            
-
-                <div class="mainLogo">
-                    <a href="Index.html"><img src="Images/Reservia.svg" alt="Logo"></a>
-                </div>
-
-                <div class="menuprincipal">
-                    <div class="navigation"> 
-                        <a href = "#Hébergements"> Hébergements </a>
-                    </div>  
-                    <div class="navigation"> 
-                        <a href = "#Activités"> Activités </a>
-                    </div>
-
-                    <div class="inscription">
-                        <a href = "#" > S'inscrire </a>
-                    </div>
-
-                </div>
-      
-
-        </header>
-
-            <section class="filters">
-                <div id="recherche">
-
-                
-                <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
-                <p> En plein centre ville ou en pleine nature </p>
-
-                <div class="input-group">
-                    <div class="input-group-icon">Icon</div>
-                    <div class="input-group-area"><input type="text" placeholder="Marseille,France"></div>
-                    <div class="input-group-button"> <button >Rechercher</button> </div>
-                  </div>
-
-                </div>
-                
-                <div id="filtres">
-                    <h3>Filtres </h3>
-
-                </div>
-            </section>
-
-            <div class="Marseillehebergement">
-            <section class="hebergements">
+    <header>
 
 
-                <div id="hebergementmarseille">
+        <div class="mainLogo">
+            <a href="Index.html"><img src="Images/Reservia.svg" alt="Logo"></a>
+        </div>
 
-                              <!--Grand encart hébergements à Marseille -->
-                              <h2>Hébergements à Marseille</h2>
+        <div class="menu">
+            <nav>
+                <ul class="menulist">
+                    <li>
+                        <a href="#Hébergements"> Hébergements </a>
+                    </li>
+                    <li>
+                        <a href="#Activités"> Activités </a>
+                    </li>
+                </ul>
 
-                              <h3> Afficher Plus </h3>
+            </nav>
+
+            <p class="inscription">
+                <a href="#"> S'inscrire </a>
+            </p>
+        </div>
 
 
-                </div>
-            </section>
 
-            <section class="populaires">
-                
-                <div id="populairemarseille">
-                    <h2>Les plus populaires</h2>
+    </header>
 
-                              <!--Encart populaires-->
-                </div>
-                
-            
-    
-            </section>
+    <section class="Research">
+
+        <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+        <p> En plein centre ville ou en pleine nature </p>
+
+    </section>
+
+    <section class="Filters">
+
+        <h3>Filtres </h3>
+
+        <button class="mainfilters">
+            <span class="filter">
+                <span class="iconfilter">
+                    <i class="fas fa-money-bill-wave"></i>
+                </span>
+                Économique
+            </span>
+
+        </button>
+
+
+        <button class="mainfilters">
+            <span class="filter">
+                <span class="iconfilter">
+                    <i class="fas fa-child"></i>
+                </span>
+                Familial
+            </span>
+
+        </button>
+
+
+        <button class="mainfilters">
+            <span class="filter">
+                <span class="iconfilter">
+                    <i class="fas fa-heart"></i>
+                </span>
+                Romantique
+            </span>
+
+        </button>
+
+
+        <button class="mainfilters">
+            <span class="filter">
+                <span class="iconfilter">
+                    <i class="fas fa-dog"></i>
+                </span>
+                Animaux autorisés
+            </span>
+
+        </button>
+    </section>
+
+    <div class="available">
+        <span>
+            <i class="fas fa-info"></i>
+        </span>
+        <span> Plus de 500 logements sont disponibles dans cette ville </span>
+    </div>
+
+
+    <div class="Marseillehebergement">
+        <section class="hebergements">
+
+
+            <div id="hebergementmarseille">
+
+                <!--Grand encart hébergements à Marseille -->
+                <h3>Hébergements à Marseille</h3>
+
+                <p> Afficher Plus <p>
+
+
+            </div>
+        </section>
+
+        <section class="populaires">
+
+            <div id="populairemarseille">
+                <h3>Les plus populaires</h3>
+
+                <!--Encart populaires-->
             </div>
 
-             <section class="Activités">
-                 <div id="activitesmarseille">
 
-                    <h2>Activités à Marseille</h2>
 
-                    <!--Grand encart Activités à Marseille-->
+        </section>
+    </div>
 
-                 </div>
+    <section class="Activités">
+        <div id="activitesmarseille">
 
-                
-        
-            </section>
+            <h3>Activités à Marseille</h3>
 
-            
-        <div id="footer"> 
-            
-            <footer>
-                    <div>   
-                        <h2>A propos</h2>
-                        <a href ="#">Fonctionnement du site</a> </br>  </br> 
-                        <a href ="#">Conditions générales de vente</a> </br> </br> 
-                        <a href ="#">Données et confidentialité</a> 
-                    </div>   
-                    <div>
-                        <h2>Nos hébergements</h2>
-                        <a href ="#">Charte qualité</a>  </br>  </br> 
-                        <a href ="#">Soumettre votre hôtel</a>
-                    </div>
-                    <div>
-                        <h2>Assistance</h2>
-                         <a href ="#">Centre d'aide</a>  </br>  </br> 
-                         <a href ="#">Nous contacter</a>
+            <!--Grand encart Activités à Marseille-->
 
-                    </div>
-            </footer>
+        </div>
 
-            </div>  
-    </body>
+
+
+    </section>
+
+
+    <div id="footer">
+
+        <footer>
+            <div>
+                <h2>A propos</h2>
+                <a href="#">Fonctionnement du site</a> </br> </br>
+                <a href="#">Conditions générales de vente</a> </br> </br>
+                <a href="#">Données et confidentialité</a>
+            </div>
+            <div>
+                <h2>Nos hébergements</h2>
+                <a href="#">Charte qualité</a> </br> </br>
+                <a href="#">Soumettre votre hôtel</a>
+            </div>
+            <div>
+                <h2>Assistance</h2>
+                <a href="#">Centre d'aide</a> </br> </br>
+                <a href="#">Nous contacter</a>
+
+            </div>
+        </footer>
+
+    </div>
+</body>
 
 </html>
