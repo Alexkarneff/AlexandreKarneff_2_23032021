@@ -13,128 +13,314 @@
 
 <body>
 
-    <header>
+    <div class="mainContent">
+        <header>
 
 
-        <div class="mainLogo">
-            <a href="Index.html"><img src="Images/Reservia.svg" alt="Logo"></a>
-        </div>
+            <div class="mainLogo">
+                <a href="Index.html"><img src="Images/Reservia.svg" alt="Logo"></a>
+            </div>
 
-        <div class="menu">
-            <nav>
-                <ul class="menulist">
-                    <li>
-                        <a href="#Hébergements"> Hébergements </a>
-                    </li>
-                    <li>
-                        <a href="#Activités"> Activités </a>
-                    </li>
-                </ul>
+
+            <nav class="menu">
+
+                <a href="#popular"> Hébergements </a>
+
+                <a href="#activities"> Activités </a>
+
+                <a href="#" class="menuregister"> S'inscrire </a>
 
             </nav>
 
-            <p class="inscription">
-                <a href="#"> S'inscrire </a>
-            </p>
+
+
+        </header>
+
+        <section class="research">
+
+            <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+            <p> En plein centre ville ou en pleine nature </p>
+
+        </section>
+
+        <section class="filters">
+
+            <h3>Filtres </h3>
+
+            <button class="mainFilters">
+                <span class="filter">
+                    <span class="iconFilter">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </span>
+                    Économique
+                </span>
+
+            </button>
+
+
+            <button class="mainFilters">
+                <span class="filter">
+                    <span class="iconFilter">
+                        <i class="fas fa-child"></i>
+                    </span>
+                    Familial
+                </span>
+
+            </button>
+
+
+            <button class="mainFilters">
+                <span class="filter">
+                    <span class="iconFilter">
+                        <i class="fas fa-heart"></i>
+                    </span>
+                    Romantique
+                </span>
+
+            </button>
+
+
+            <button class="mainFilters">
+                <span class="filter">
+                    <span class="iconFilter">
+                        <i class="fas fa-dog"></i>
+                    </span>
+                    Animaux autorisés
+                </span>
+
+            </button>
+        </section>
+
+        <div class="available">
+            <div>
+                <i class="fas fa-info"></i>
+            </div>
+            <div class="infotxt"> Plus de 500 logements sont disponibles dans cette ville </div>
+        </div>
+
+
+        <div class="mainHosting">
+
+
+            <section class="popular">
+
+                <div class="popularTitle">
+                    <h3>Les plus populaires</h3>
+                    <div popularIcon>
+                        <i class="fas fa-chart-line" aria-hidden="true"> </i>
+                    </div>
+                    <!--Encart populaires-->
+                </div>
+
+                <div class="popularCards">
+                    <a href="#" class="popularHosting">
+                        <img src="Images/4_small/soleildumatin.jpg" alt="Hôtel Le soleil du matin">
+                        <div class="infoPopular">
+                            <h2 class="titlePopular">
+                                Hôtel Le soleil du matin
+                            </h2>
+                            <p class="popularPrice">
+                                Nuit à partir de 128<b>€</b>
+                            </p>
+                            <div class="cardRating">
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                            </div>
+
+                        </div>
+                    </a>
+
+                    <a href="#" class="popularHosting">
+                        <img src="Images/4_small/coeurdeleau.jpg" alt="Au coeur de l'eau Chambres d'hôtes">
+                        <div class="infoPopular">
+                            <h2 class="titlePopular">
+                                Au coeur de l'eau Chambres d'hôtes
+                            </h2>
+                            <p class="popularPrice">
+                                Nuit à partir de 71<b>€</b>
+                            </p>
+                            <div class="cardRating">
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star color-unset" aria-hidden="true"></i>
+                            </div>
+
+                        </div>
+                    </a>
+
+                      <a href="#" class="popularHosting">
+                        <img src="Images/4_small/toutbleu.jpg" alt="Hôtel Tout bleu et Blanc">
+                        <div class="infoPopular">
+                            <h2 class="titlePopular">
+                                Hôtel Tout bleu et Blanc
+                            </h2>
+                            <p class="popularPrice">
+                                Nuit à partir de 68<b>€</b>
+                            </p>
+                            <div class="cardRating">
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star color-unset" aria-hidden="true"></i>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+
+
+            </section>
+
+            <section class="hosting">
+
+                <h3>Hébergements à Marseille</h3>
+
+
+
+                <!--Grand encart hébergements à Marseille -->
+
+                <div class="hostingCards">
+                    <a href="#" class="cardHosting">
+                        <img src="Images/4_small/Cannebiere.jpg" alt="Auberge de la cannebière">
+                        <div class="infoHosting">
+                            <h2 class="titleHosting">
+                                Auberge la Cannebière
+                            </h2>
+                            <p class="hostingPrice">
+                                Nuit à partir de <b>25€</b>
+                            </p>
+                            <div class="cardRating">
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star color-unset" aria-hidden="true"></i>
+                            </div>
+
+                        </div>
+                    </a>
+                    <a href="#" class="cardHosting">
+                        <img src="Images/4_small/Hotelduport.jpg" alt="Hôtel du port">
+                        <div class="infoHosting">
+                            <h2 class="titleHosting">
+                                Hôtel du port
+                            </h2>
+                            <p class="hostingPrice">
+                                Nuit à partir de 52<b>€</b>
+                            </p>
+                            <div class="cardRating">
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                            </div>
+
+                        </div>
+
+                    </a>
+                    <a href="#" class="cardHosting">
+                        <img src="Images/4_small/Lesmouettes.jpg" alt="Hôtel Les mouettes">
+                        <div class="infoHosting">
+                            <h2 class="titleHosting">
+                                Hôtel Les mouettes
+                            </h2>
+                            <p class="hostingPrice">
+                                Nuit à partir de 76<b>€</b>
+                            </p>
+                            <div class="cardRating">
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star color-unset" aria-hidden="true"></i>
+                            </div>
+
+                        </div>
+
+                    </a>
+                    <a href="#" class="cardHosting">
+                        <img src="Images/4_small/hoteldelamer.jpg" alt="Hôtel de la mer">
+                        <div class="infoHosting">
+                            <h2 class="titleHosting">
+                                Hôtel de la mer
+                            </h2>
+                            <p class="hostingPrice">
+                                Nuit à partir de 46<b>€</b>
+                            </p>
+                            <div class="cardRating">
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star color-unset" aria-hidden="true"></i>
+                                <i class="fas fa-star color-unset" aria-hidden="true"></i>
+                            </div>
+
+                        </div>
+
+                    </a>
+                    <a href="#" class="cardHosting">
+                        <img src="Images/4_small/aubergelePanier.jpg" alt="Auberge Le Panier">
+                        <div class="infoHosting">
+                            <h2 class="titleHosting">
+                                Auberge Le Panier
+                            </h2>
+                            <p class="hostingPrice">
+                                Nuit à partir de <b>23 €</b>
+                            </p>
+                            <div class="cardRating">
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star color-unset" aria-hidden="true"></i>
+                            </div>
+
+                        </div>
+
+                    </a>
+                    <a href="#" class="cardHosting">
+                        <img src="Images/4_small/hotelAmina.jpg" alt="Hôtel chez Amina">
+                        <div class="infoHosting">
+                            <h2 class="titleHosting">
+                                Hôtel chez Amina
+                            </h2>
+                            <p class="hostingPrice">
+                                Nuit à partir de 96<b>€</b>
+                            </p>
+                            <div class="cardRating">
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
+                            </div>
+
+                        </div>
+
+                    </a>
+                </div>
+                <p class="more">
+                    <a href="#"> Afficher Plus </a>
+
+                </p>
+
         </div>
 
 
 
-    </header>
-
-    <section class="Research">
-
-        <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
-        <p> En plein centre ville ou en pleine nature </p>
-
-    </section>
-
-    <section class="Filters">
-
-        <h3>Filtres </h3>
-
-        <button class="mainfilters">
-            <span class="filter">
-                <span class="iconfilter">
-                    <i class="fas fa-money-bill-wave"></i>
-                </span>
-                Économique
-            </span>
-
-        </button>
-
-
-        <button class="mainfilters">
-            <span class="filter">
-                <span class="iconfilter">
-                    <i class="fas fa-child"></i>
-                </span>
-                Familial
-            </span>
-
-        </button>
-
-
-        <button class="mainfilters">
-            <span class="filter">
-                <span class="iconfilter">
-                    <i class="fas fa-heart"></i>
-                </span>
-                Romantique
-            </span>
-
-        </button>
-
-
-        <button class="mainfilters">
-            <span class="filter">
-                <span class="iconfilter">
-                    <i class="fas fa-dog"></i>
-                </span>
-                Animaux autorisés
-            </span>
-
-        </button>
-    </section>
-
-    <div class="available">
-        <span>
-            <i class="fas fa-info"></i>
-        </span>
-        <span> Plus de 500 logements sont disponibles dans cette ville </span>
-    </div>
-
-
-    <div class="Marseillehebergement">
-        <section class="hebergements">
-
-
-            <div id="hebergementmarseille">
-
-                <!--Grand encart hébergements à Marseille -->
-                <h3>Hébergements à Marseille</h3>
-
-                <p> Afficher Plus <p>
-
-
-            </div>
         </section>
 
-        <section class="populaires">
-
-            <div id="populairemarseille">
-                <h3>Les plus populaires</h3>
-
-                <!--Encart populaires-->
-            </div>
-
-
-
-        </section>
     </div>
 
-    <section class="Activités">
-        <div id="activitesmarseille">
+    <section class="mainactivities">
+        <div id="activities">
 
             <h3>Activités à Marseille</h3>
 
@@ -147,29 +333,28 @@
     </section>
 
 
-    <div id="footer">
-
-        <footer>
-            <div>
-                <h2>A propos</h2>
-                <a href="#">Fonctionnement du site</a> </br> </br>
-                <a href="#">Conditions générales de vente</a> </br> </br>
-                <a href="#">Données et confidentialité</a>
-            </div>
-            <div>
-                <h2>Nos hébergements</h2>
-                <a href="#">Charte qualité</a> </br> </br>
-                <a href="#">Soumettre votre hôtel</a>
-            </div>
-            <div>
-                <h2>Assistance</h2>
-                <a href="#">Centre d'aide</a> </br> </br>
-                <a href="#">Nous contacter</a>
-
-            </div>
-        </footer>
-
     </div>
+    <footer>
+        <div class="footertext">
+            <h2>A propos</h2>
+            <a href="#">Fonctionnement du site</a> </br> </br>
+            <a href="#">Conditions générales de vente</a> </br> </br>
+            <a href="#">Données et confidentialité</a>
+        </div>
+        <div class="footertext">
+            <h2>Nos hébergements</h2>
+            <a href="#">Charte qualité</a> </br> </br>
+            <a href="#">Soumettre votre hôtel</a>
+        </div>
+        <div class="footertext">
+            <h2>Assistance</h2>
+            <a href="#">Centre d'aide</a> </br> </br>
+            <a href="#">Nous contacter</a>
+
+        </div>
+    </footer>
+
+
 </body>
 
 </html>

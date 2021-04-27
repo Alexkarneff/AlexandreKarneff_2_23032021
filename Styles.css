@@ -2,19 +2,30 @@
 * {
     font-family: 'Raleway', sans-serif;
 }
-
 body {
-    margin-left: 4rem;
+    margin: 0;
+}
+.mainContent {
+    margin: 0 55px;
 }
 h2{
   font-weight:700 ;  
 }
 
-h3{
-    font-weight: 700;
+a {
+    color: black;
+    text-decoration: none;
 }
 
-
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+    padding-top: 25px;
+}
+.mainLogo {
+    padding-left: 5px ;
+}
 .menu {
     margin-right: 8rem;
     padding: 0;
@@ -22,7 +33,7 @@ h3{
     display: flex;   
     justify-content: flex-end;
 }
-.menulist {
+.menuList {
     
     width: 100%;
     display: flex;
@@ -34,75 +45,38 @@ li {
     margin-right: 4rem;
     text-align: center;
 }
-.inscription {
+.register {
     border-style: none;
     margin-left: 4rem;
     color: #0065FC;
     
 }
 
-.
-.Marseillehebergement {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-.hebergements {
-    background-color: #F2F2F2 ;
-    padding: 15px;
-    margin-bottom: 5px;
-    margin-right: 8px;
-    border-radius: 10px;
-}
 
-.populaires {
-    background-color: #F2F2F2;
-    padding: 15px;
-    border-radius: 10px;
+.menu a:hover {
+    color: #0065FC;
 }
-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-right: 20rem;
-    padding-bottom: 4rem;
-    padding-top: 2rem;
-    
-    background-color:#F2F2F2;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 4rem;
-}
-
-a {
-    color: black;
-    text-decoration: none;
-}
-
-a:hover {
+footer a:hover {
     color: #0065FC;
 }
 
-.Research {
+.research {
     padding-bottom:  2rem;
   }
   
-.Research h2 {
+.research h2 {
     margin:0;
 }
 
-.Research p {
+.research p {
     font-weight: 100;
 }
 
-.Filters {
+.filters {
     display: inline-flex;
     padding-bottom: 2rem;
 }
-.Filters h3 {
+.filters h3 {
     margin-right: 2rem;
 }
 
@@ -112,7 +86,7 @@ a:hover {
     padding-bottom: 2rem;
 }
 
-.mainfilters {
+.mainFilters {
     background-color: transparent;
     border-radius: 50px;
     border: 2px solid #F2F2F2;
@@ -127,12 +101,10 @@ a:hover {
     font-size: 0.9rem;
     display: inline-flex;
     padding-right: 15px;
-    align-items: center;
-
-    
+    align-items: center; 
   }
 
-.iconfilter {
+.iconFilter {
     height: 45px;
     width: 45px; 
     font-size: 0.9rem;
@@ -145,9 +117,113 @@ a:hover {
     border-radius: 50px;
 
   }
-  
+
+.hosting {
+    width: 65%;
+    background-color: #F2F2F2 ;
+    padding: 45px;
+    margin-bottom: 5px;
+    border-radius: 20px;
+    margin-right: 45px;
+}
+.hosting h3 {
+    margin-bottom: 0;
+    margin-left: 1rem;
+
+}
+
+.hostings p {
+    font-size: 1.17rem;
+    font-weight: bold;
+}
+.popular {
+    width: 25%;
+    background-color: #F2F2F2;
+    padding: 45px;
+    border-radius: 20px;
+}
+
+.mainHosting {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.hostingCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.cardHosting 
+{ 
+    display: flex;
+    width: 30%;
+    height: 270px;
+    background-color: white;
+    border-radius: 30px;
+    flex-direction: column;
+    box-shadow: 0px 0px 7px 3px  #DEEBFF;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.cardHosting img {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    height: 150px;
+    padding: 5px;
+    object-fit: cover;
+}
+
+.cardHosting p {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+.cardHosting h3 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0;
+}
+.infoHosting {
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cardRating {
+    color: #0065FC;
+}
+
+.color-unset {
+    color: grey;
+}
 
 
-  .filtreshebergement {
 
-  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footertext {
+    margin-right: 2rem;
+    flex: 1;
+
+}
+footer {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 4rem;
+    padding-top: 2rem;
+    margin-left: 0;
+    background-color:#F2F2F2;
+    padding-left: 55px;
+}
