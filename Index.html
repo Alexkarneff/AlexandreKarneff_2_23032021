@@ -16,23 +16,23 @@
     <div class="mainContent">
         <header>
 
+            <div class="topContent">
+                <div class="mainLogo">
+                    <a href="Index.html"><img src="Images/Reservia.svg" alt="Logo"></a>
+                </div>
 
-            <div class="mainLogo">
-                <a href="Index.html"><img src="Images/Reservia.svg" alt="Logo"></a>
+
+                <nav class="menu">
+
+                    <a href="#hosting" class="menuHostings"> Hébergements </a>
+
+                    <a href="#activities" class="menuActivities"> Activités </a>
+
+                    <a href="#" class="menuRegister"> S'inscrire </a>
+
+                </nav>
+
             </div>
-
-
-            <nav class="menu">
-
-                <a href="#popular"> Hébergements </a>
-
-                <a href="#activities"> Activités </a>
-
-                <a href="#" class="menuregister"> S'inscrire </a>
-
-            </nav>
-
-
 
         </header>
 
@@ -48,15 +48,17 @@
                 </div>
                 <input class="searchText" value="Marseille,France" type="text">
                 <input type="submit" class="searchButton" value="Rechercher">
+                <i id="searchIcon" class="fas fa-search" aria-hidden="true"></i>
 
             </div>
 
 
         </section>
 
-        <section class="filters">
-
-            <h3>Filtres </h3>
+        <div class="filters">
+            <div class="titleFilters">
+                <h3>Filtres </h3>
+            </div>
 
             <button class="mainFilters">
                 <span class="filter">
@@ -100,7 +102,7 @@
                 </span>
 
             </button>
-        </section>
+        </div>
 
         <div class="available">
             <div>
@@ -109,219 +111,220 @@
             <div class="infotxt"> Plus de 500 logements sont disponibles dans cette ville </div>
         </div>
 
+        <div id="hosting">
+            <div class="mainHosting">
 
-        <div class="mainHosting">
 
+                <section class="popular">
 
-            <section class="popular">
-
-                <div class="popularTitle">
-                    <h3>Les plus populaires</h3>
-                    <div popularIcon>
-                        <i class="fas fa-chart-line" aria-hidden="true"> </i>
+                    <div class="popularTitle">
+                        <h3>Les plus populaires</h3>
+                        <div popularIcon>
+                            <i class="fas fa-chart-line" aria-hidden="true"> </i>
+                        </div>
+                        <!--Encart populaires-->
                     </div>
-                    <!--Encart populaires-->
-                </div>
 
-                <div class="popularCards">
-                    <a href="#" class="popularHosting">
-                        <img src="Images/4_small/soleildumatin.jpg" alt="Hôtel Le soleil du matin">
-                        <div class="infoPopular">
-                            <h2 class="titlePopular">
-                                Hôtel Le soleil du matin
-                            </h2>
-                            <p class="popularPrice">
-                                Nuit à partir de 128<b>€</b>
-                            </p>
-                            <div class="cardRating">
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
+                    <div class="popularCards">
+                        <a href="#" class="popularHosting">
+                            <img src="Images/4_small/soleildumatin.jpg" alt="Hôtel Le soleil du matin">
+                            <div class="infoPopular">
+                                <h2 class="titlePopular">
+                                    Hôtel Le soleil du matin
+                                </h2>
+                                <p class="popularPrice">
+                                    Nuit à partir de 128<b>€</b>
+                                </p>
+                                <div class="cardRating">
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                </div>
+
+                            </div>
+                        </a>
+
+                        <a href="#" class="popularHosting">
+                            <img src="Images/4_small/coeurdeleau.jpg" alt="Au coeur de l'eau Chambres d'hôtes">
+                            <div class="infoPopular">
+                                <h2 class="titlePopular">
+                                    Au coeur de l'eau Chambres d'hôtes
+                                </h2>
+                                <p class="popularPrice">
+                                    Nuit à partir de 71<b>€</b>
+                                </p>
+                                <div class="cardRating">
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star color-unset" aria-hidden="true"></i>
+                                </div>
+
+                            </div>
+                        </a>
+
+                        <a href="#" class="popularHosting">
+                            <img src="Images/4_small/toutbleu.jpg" alt="Hôtel Tout bleu et Blanc">
+                            <div class="infoPopular">
+                                <h2 class="titlePopular">
+                                    Hôtel Tout bleu et Blanc
+                                </h2>
+                                <p class="popularPrice">
+                                    Nuit à partir de 68<b>€</b>
+                                </p>
+                                <div class="cardRating">
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star color-unset" aria-hidden="true"></i>
+                                </div>
+
+                            </div>
+                        </a>
+                    </div>
+
+
+                </section>
+
+                <section class="hosting">
+
+                    <h3>Hébergements à Marseille</h3>
+
+
+
+                    <!--Grand encart hébergements à Marseille -->
+
+                    <div class="hostingCards">
+                        <a href="#" class="cardHosting">
+                            <img src="Images/4_small/Cannebiere.jpg" alt="Auberge de la cannebière">
+                            <div class="infoHosting">
+                                <h2 class="titleHosting">
+                                    Auberge la Cannebière
+                                </h2>
+                                <p class="hostingPrice">
+                                    Nuit à partir de <b>25€</b>
+                                </p>
+                                <div class="cardRating">
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star color-unset" aria-hidden="true"></i>
+                                </div>
+
+                            </div>
+                        </a>
+                        <a href="#" class="cardHosting">
+                            <img src="Images/4_small/Hotelduport.jpg" alt="Hôtel du port">
+                            <div class="infoHosting">
+                                <h2 class="titleHosting">
+                                    Hôtel du port
+                                </h2>
+                                <p class="hostingPrice">
+                                    Nuit à partir de 52<b>€</b>
+                                </p>
+                                <div class="cardRating">
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                </div>
+
                             </div>
 
-                        </div>
-                    </a>
+                        </a>
+                        <a href="#" class="cardHosting">
+                            <img src="Images/4_small/Lesmouettes.jpg" alt="Hôtel Les mouettes">
+                            <div class="infoHosting">
+                                <h2 class="titleHosting">
+                                    Hôtel Les mouettes
+                                </h2>
+                                <p class="hostingPrice">
+                                    Nuit à partir de 76<b>€</b>
+                                </p>
+                                <div class="cardRating">
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star color-unset" aria-hidden="true"></i>
+                                </div>
 
-                    <a href="#" class="popularHosting">
-                        <img src="Images/4_small/coeurdeleau.jpg" alt="Au coeur de l'eau Chambres d'hôtes">
-                        <div class="infoPopular">
-                            <h2 class="titlePopular">
-                                Au coeur de l'eau Chambres d'hôtes
-                            </h2>
-                            <p class="popularPrice">
-                                Nuit à partir de 71<b>€</b>
-                            </p>
-                            <div class="cardRating">
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star color-unset" aria-hidden="true"></i>
                             </div>
 
-                        </div>
-                    </a>
+                        </a>
+                        <a href="#" class="cardHosting">
+                            <img src="Images/4_small/hoteldelamer.jpg" alt="Hôtel de la mer">
+                            <div class="infoHosting">
+                                <h2 class="titleHosting">
+                                    Hôtel de la mer
+                                </h2>
+                                <p class="hostingPrice">
+                                    Nuit à partir de 46<b>€</b>
+                                </p>
+                                <div class="cardRating">
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star color-unset" aria-hidden="true"></i>
+                                    <i class="fas fa-star color-unset" aria-hidden="true"></i>
+                                </div>
 
-                    <a href="#" class="popularHosting">
-                        <img src="Images/4_small/toutbleu.jpg" alt="Hôtel Tout bleu et Blanc">
-                        <div class="infoPopular">
-                            <h2 class="titlePopular">
-                                Hôtel Tout bleu et Blanc
-                            </h2>
-                            <p class="popularPrice">
-                                Nuit à partir de 68<b>€</b>
-                            </p>
-                            <div class="cardRating">
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star color-unset" aria-hidden="true"></i>
                             </div>
 
-                        </div>
-                    </a>
-                </div>
+                        </a>
+                        <a href="#" class="cardHosting">
+                            <img src="Images/4_small/aubergelePanier.jpg" alt="Auberge Le Panier">
+                            <div class="infoHosting">
+                                <h2 class="titleHosting">
+                                    Auberge Le Panier
+                                </h2>
+                                <p class="hostingPrice">
+                                    Nuit à partir de <b>23 €</b>
+                                </p>
+                                <div class="cardRating">
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star color-unset" aria-hidden="true"></i>
+                                </div>
 
-
-            </section>
-
-            <section class="hosting">
-
-                <h3>Hébergements à Marseille</h3>
-
-
-
-                <!--Grand encart hébergements à Marseille -->
-
-                <div class="hostingCards">
-                    <a href="#" class="cardHosting">
-                        <img src="Images/4_small/Cannebiere.jpg" alt="Auberge de la cannebière">
-                        <div class="infoHosting">
-                            <h2 class="titleHosting">
-                                Auberge la Cannebière
-                            </h2>
-                            <p class="hostingPrice">
-                                Nuit à partir de <b>25€</b>
-                            </p>
-                            <div class="cardRating">
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star color-unset" aria-hidden="true"></i>
                             </div>
 
-                        </div>
-                    </a>
-                    <a href="#" class="cardHosting">
-                        <img src="Images/4_small/Hotelduport.jpg" alt="Hôtel du port">
-                        <div class="infoHosting">
-                            <h2 class="titleHosting">
-                                Hôtel du port
-                            </h2>
-                            <p class="hostingPrice">
-                                Nuit à partir de 52<b>€</b>
-                            </p>
-                            <div class="cardRating">
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
+                        </a>
+                        <a href="#" class="cardHosting">
+                            <img src="Images/4_small/hotelAmina.jpg" alt="Hôtel chez Amina">
+                            <div class="infoHosting">
+                                <h2 class="titleHosting">
+                                    Hôtel chez Amina
+                                </h2>
+                                <p class="hostingPrice">
+                                    Nuit à partir de 96<b>€</b>
+                                </p>
+                                <div class="cardRating">
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                    <i class="fas fa-star" aria-hidden="true"></i>
+                                </div>
+
                             </div>
 
-                        </div>
+                        </a>
+                    </div>
+                    <p class="more">
+                        <a href="#"> Afficher Plus </a>
 
-                    </a>
-                    <a href="#" class="cardHosting">
-                        <img src="Images/4_small/Lesmouettes.jpg" alt="Hôtel Les mouettes">
-                        <div class="infoHosting">
-                            <h2 class="titleHosting">
-                                Hôtel Les mouettes
-                            </h2>
-                            <p class="hostingPrice">
-                                Nuit à partir de 76<b>€</b>
-                            </p>
-                            <div class="cardRating">
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star color-unset" aria-hidden="true"></i>
-                            </div>
+                    </p>
 
-                        </div>
-
-                    </a>
-                    <a href="#" class="cardHosting">
-                        <img src="Images/4_small/hoteldelamer.jpg" alt="Hôtel de la mer">
-                        <div class="infoHosting">
-                            <h2 class="titleHosting">
-                                Hôtel de la mer
-                            </h2>
-                            <p class="hostingPrice">
-                                Nuit à partir de 46<b>€</b>
-                            </p>
-                            <div class="cardRating">
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star color-unset" aria-hidden="true"></i>
-                                <i class="fas fa-star color-unset" aria-hidden="true"></i>
-                            </div>
-
-                        </div>
-
-                    </a>
-                    <a href="#" class="cardHosting">
-                        <img src="Images/4_small/aubergelePanier.jpg" alt="Auberge Le Panier">
-                        <div class="infoHosting">
-                            <h2 class="titleHosting">
-                                Auberge Le Panier
-                            </h2>
-                            <p class="hostingPrice">
-                                Nuit à partir de <b>23 €</b>
-                            </p>
-                            <div class="cardRating">
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star color-unset" aria-hidden="true"></i>
-                            </div>
-
-                        </div>
-
-                    </a>
-                    <a href="#" class="cardHosting">
-                        <img src="Images/4_small/hotelAmina.jpg" alt="Hôtel chez Amina">
-                        <div class="infoHosting">
-                            <h2 class="titleHosting">
-                                Hôtel chez Amina
-                            </h2>
-                            <p class="hostingPrice">
-                                Nuit à partir de 96<b>€</b>
-                            </p>
-                            <div class="cardRating">
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                                <i class="fas fa-star" aria-hidden="true"></i>
-                            </div>
-
-                        </div>
-
-                    </a>
-                </div>
-                <p class="more">
-                    <a href="#"> Afficher Plus </a>
-
-                </p>
-
+            </div>
         </div>
 
 
@@ -337,7 +340,7 @@
                 <!--Grand encart Activités à Marseille-->
                 <div class="parent">
 
-                        <a href="#">
+                    <a href="#">
                         <div class="div1">
                             <img src="Images/4_small/vieuxport.jpg" alt="Vieux port">
                             <div class="titleActivity">
@@ -396,23 +399,25 @@
 
     </div>
     <footer>
-        <div class="footertext">
-            <h2>A propos</h2>
-            <a href="#">Fonctionnement du site</a> </br> </br>
-            <a href="#">Conditions générales de vente</a> </br> </br>
-            <a href="#">Données et confidentialité</a>
-        </div>
-        <div class="footertext">
-            <h2>Nos hébergements</h2>
-            <a href="#">Charte qualité</a> </br> </br>
-            <a href="#">Soumettre votre hôtel</a>
-        </div>
-        <div class="footertext">
-            <h2>Assistance</h2>
-            <a href="#">Centre d'aide</a> </br> </br>
-            <a href="#">Nous contacter</a>
+        
+            <div class="footertext">
+                <h2>A propos</h2>
+                <a href="#">Fonctionnement du site</a> </br> </br>
+                <a href="#">Conditions générales de vente</a> </br> </br>
+                <a href="#">Données et confidentialité</a>
+            </div>
+            <div class="footertext">
+                <h2>Nos hébergements</h2>
+                <a href="#">Charte qualité</a> </br> </br>
+                <a href="#">Soumettre votre hôtel</a>
+            </div>
+            <div class="footertext">
+                <h2>Assistance</h2>
+                <a href="#">Centre d'aide</a> </br> </br>
+                <a href="#">Nous contacter</a>
 
-        </div>
+            </div>
+        
     </footer>
 
 

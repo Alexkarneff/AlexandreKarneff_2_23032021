@@ -19,24 +19,56 @@ a {
 }
 
 header {
+     margin-bottom: 3rem;
+     padding-left: 5px ;
+}
+
+.topContent {
+    margin-top: 2em;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 3rem;
-    margin-top: 2rem;
 }
-.mainLogo {
-    padding-left: 5px ;
-}
+
 .menu {
     width: 35%;
     display: flex;   
     justify-content: space-around;
-    padding-top: 1rem ;
+    align-items: flex-end;
 }
-.menuregister {
+
+.menu a:hover {
+    color: #0065FC;
+    border-top: solid 3px #0065FC;
+}
+
+.menuHostings {
+    padding-bottom: 20px;
+    display: flex;
+    align-items: flex-end;  
+    height: 100%; 
+}
+.menuActivities{
+    padding-bottom: 20px;
+    display: flex;
+    align-items: flex-end;  
+    height: 100%; 
+}
+.menuRegister {    
+    padding-bottom: 20px;
+    display: flex;
+    align-items: flex-end;  
+    height: 100%; 
     color: #0065FC;
     font-weight: bold;
 }
+
+.menuRegister a {
+    padding-bottom: 20px;
+    display: flex;
+    align-items: flex-end;  
+    height: 100%; 
+}
+
 .register a  {
     color: #0065FC;
     font-weight: bold;
@@ -61,9 +93,6 @@ li {
 }
 
 
-.menu a:hover {
-    color: #0065FC;
-}
 footer a:hover {
     color: #0065FC;
 }
@@ -104,7 +133,7 @@ footer a:hover {
 .searchText {
     display: flex;
     border-color: #F2F2F2;
-    border: 2px solid #d9d9d9;
+    border: 2px solid #F2F2F2;
     border-left-style: none;
     border-right-style: none;
     font-size: 1.2rem;
@@ -122,13 +151,20 @@ footer a:hover {
     padding: 0 10px 0 10px;
 
 }
+#searchIcon {
+    display: none;
+}
 
 .filters {
-    display: inline-flex;
+    display: flex;
     padding-bottom: 2rem;
+    flex-wrap: wrap;
 }
-.filters h3 {
-    margin-right: 2rem;
+.titleFilters {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5em;
+    margin-right: 1.5em;
 }
 
 
@@ -160,9 +196,12 @@ footer a:hover {
     border-radius: 50px;
     border: 2px solid #d9d9d9;
     font-weight: bold;
-    margin-right: 20px ;
+    margin-right: 20px;
+    margin-bottom: 20px;
     padding: 0;
-    height: 50px;
+    height: 48px;
+    border-left: none;
+    display: flex;
     
   }
 
@@ -170,20 +209,23 @@ footer a:hover {
     font-size: 1rem;
     display: inline-flex;
     padding-right: 20px;
-    align-items: center; 
+    align-items: center;
   }
 
 .iconFilter {
-    height: 45px;
-    width: 45px; 
+    height: 48px;
+    width: 45px;
     font-size: 1rem;
-    color:#0065FC; 
+    color: #0065FC;
     background-color: #DEEBFF;
     margin-right: 10px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50px;
+    border-radius: 34px;
+    position: relative;
+    right: 0px;
+    bottom: 2px;
 
   }
 
@@ -433,9 +475,9 @@ footer a:hover {
 
 
 
-
 .footertext {
     margin-right: 2rem;
+    margin-bottom: 1rem;
     flex: 1;
 
 }
@@ -447,4 +489,100 @@ footer {
     margin-left: 0;
     background-color:#F2F2F2;
     padding-left: 55px;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+
+    .mainContent {
+        margin: 0;
+    }
+    .topContent {
+        display: inline;
+    }
+    .mainLogo {
+        margin-bottom: 1rem;
+        padding-left: 2rem;
+        padding-top: 1rem;
+    }
+
+    
+    .menu {
+        width: 100%;
+        display: flex;
+
+    }
+    .menu a:hover {
+        color: #0065FC;
+        border-top:none;
+        border-color: #0065FC;
+    }
+
+    .menuRegister {
+        position: absolute;    
+        height: 20px;
+        top: 15px;
+        right: 25px;
+        margin-top: 15px;
+        border-top: 3px solid transparent;    
+        align-items: baseline;
+    }
+    .menuHostings {
+
+        width: 50%;
+        color: black;
+        border-top: none;
+        border-bottom: 3px solid #f2f2f2;      
+        padding-bottom: 1em;
+        display: flex;
+        justify-content: center;
+    }
+
+    .menuActivities {
+        width: 50%;
+        color: black;
+        border-top: none;
+        border-bottom: 3px solid #f2f2f2;
+        padding-bottom: 1em;
+        display: flex;
+        justify-content: center;
+    }
+   
+    .research {
+        padding: 0rem 0rem 1.5rem 1.5rem ;
+    }
+
+    .searchButton {
+        display: none;
+    }
+
+    #searchIcon {
+        background-color: #0065fc;
+        color: #fff;
+        height: 100%;
+        width: 3em;
+        margin-left: -0.7em;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .filters {
+        margin-left: 2rem;
+    }
+    .titleFilters  {
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+    .available {
+        margin-left: 2rem;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
 }
