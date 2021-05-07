@@ -111,7 +111,7 @@ footer a:hover {
 .search {
     display: flex;
     height: 3rem;
-    width: 400px;
+    max-width: 400px;
     margin-top: 1.5rem;
     font-weight: bold;
     font-size: 1.2em;
@@ -160,13 +160,17 @@ footer a:hover {
     padding-bottom: 2rem;
     flex-wrap: wrap;
 }
+
+
 .titleFilters {
     display: flex;
     align-items: center;
-    margin-bottom: 1.5em;
-    margin-right: 1.5em;
+    margin-bottom: 1.5rem;
+    margin-right: 1.5rem;   
 }
-
+.titleFilters h3 {
+    margin: 0;
+}
 
 .available {
     display: flex;
@@ -197,13 +201,13 @@ footer a:hover {
     border: 2px solid #d9d9d9;
     font-weight: bold;
     margin-right: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     padding: 0;
     height: 48px;
     border-left: none;
-    display: flex;
-    
+    display: flex; 
   }
+
 
 .filter {
     font-size: 1rem;
@@ -245,7 +249,7 @@ footer a:hover {
 
 }
 .hosting h2 {
-    margin-top: 0.3em;
+    margin-top: 0.3rem;
     margin-bottom: 0;
 }
 
@@ -264,27 +268,27 @@ footer a:hover {
 }
 
 .popular h3 {
-    font-size: 1.2em;
+    font-size: 1.2rem;
     margin-top: 0;
     margin-bottom: 0;
     font-weight: bold;
 }
 
 .popular h2 {
-    margin-top: 0.8em;
+    margin-top: 0.8rem;
     margin-bottom: 0;
-    font-size: 1.2em;
+    font-size: 1.2rem;
 }
 
 .popularTitle {
-    font-size: 1.2em;
+    font-size: 1.2rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
 .popularTitle i {
-    font-size: 1.3em;
+    font-size: 1.3rem;
 }
 
 
@@ -352,10 +356,10 @@ footer a:hover {
     margin-bottom: 0rem;
 }
 .titleHosting {
-    font-size: 1em;
+    font-size: 1rem;
 }
 .hostingPrice {
-    font-size: 0.9em;
+    font-size: 0.9rem;
 }
 
 .infoHosting {
@@ -369,7 +373,7 @@ footer a:hover {
 
 .cardRating {
     color: #0065FC;
-    font-size: 0.8em;
+    font-size: 0.8rem;
 }
 
 .color-unset {
@@ -440,7 +444,7 @@ footer a:hover {
         width: 100%;      
     }
     .div2 img {
-        height: 80%;
+        height: 230px;
         width: 100%;      
     }
     .div3 img {
@@ -452,7 +456,7 @@ footer a:hover {
         width: 100%;      
     }
     .div5 img {
-        height: 75%;
+        height: 180px;
         width: 100%;      
     }
     .div6 img {
@@ -506,11 +510,11 @@ footer {
         padding-left: 2rem;
         padding-top: 1rem;
     }
-
     
     .menu {
         width: 100%;
         display: flex;
+        margin-top: 2rem;
 
     }
     .menu a:hover {
@@ -534,7 +538,7 @@ footer {
         color: black;
         border-top: none;
         border-bottom: 3px solid #f2f2f2;      
-        padding-bottom: 1em;
+        padding-bottom: 1rem;
         display: flex;
         justify-content: center;
     }
@@ -544,7 +548,7 @@ footer {
         color: black;
         border-top: none;
         border-bottom: 3px solid #f2f2f2;
-        padding-bottom: 1em;
+        padding-bottom: 1rem;
         display: flex;
         justify-content: center;
     }
@@ -553,6 +557,9 @@ footer {
         padding: 0rem 0rem 1.5rem 1.5rem ;
     }
 
+    .searchText {
+        width: 75%;
+    }
     .searchButton {
         display: none;
     }
@@ -561,8 +568,8 @@ footer {
         background-color: #0065fc;
         color: #fff;
         height: 100%;
-        width: 3em;
-        margin-left: -0.7em;
+        width: 3rem;
+        margin-left: -0.7rem;
         border-radius: 15px;
         display: flex;
         align-items: center;
@@ -570,17 +577,145 @@ footer {
     }
 
     .filters {
-        margin-left: 2rem;
+        margin-left: 1.5rem;
     }
     .titleFilters  {
         width: 100%;
         margin-bottom: 1.5rem;
+        
     }
 
     .available {
-        margin-left: 2rem;
+        margin-left: 1.5rem;
     }
 
+    .mainHosting {
+        flex-direction: column;
+    }
+
+    .popular {
+        width: 100%;     
+        border-radius: 0px;  
+        padding-left: 1.5rem;
+    }
+
+    .popularTitle {
+        padding-left: 1rem;
+        padding-right: 2rem;
+        justify-content: space-between;
+    }
+
+    .popularCards {
+        width: 92%;
+        justify-content: center;
+    }
+
+    .infoPopular {
+        width: 60%;
+    }
+
+    .hosting {
+        width: 100%;
+        background-color: transparent;       
+    }
+
+    .hostingCards {
+        width: 92%;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cardHosting {
+        width: 92%;
+    }
+    .infoHosting {
+        font-size: 1.2rem;
+    }
+    .more {
+        font-size: 1.3rem;
+    }
+
+    #activities {
+        padding-left: 2.5rem;
+    }
+    .parent {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .div1 {  
+        width: 92%;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 0 16px #0000002e;
+        border-radius: 25px;
+        margin-bottom: 2rem;
+    }
+
+    .div2 {  
+        width: 92%;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 0 16px #0000002e;
+        border-radius: 25px;
+        margin-bottom: 2rem;
+    }
+    .div3 {
+        width: 92%;
+         display: flex;
+         flex-direction: column;
+         box-shadow: 0 0 16px #0000002e;
+         border-radius: 25px;
+         margin-bottom: 2rem;
+        }
+    .div4 { 
+        width: 92%;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 0 16px #0000002e;
+        border-radius: 25px; 
+        margin-bottom: 2rem;
+    }
+    .div5 { 
+        width: 92%;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 0 16px #0000002e;
+        border-radius: 25px;
+        margin-bottom: 2rem;
+    }
+    .div6 { 
+        width: 92%;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 0 16px #0000002e;
+        border-radius: 25px;
+    }
+    .div1 img {
+        height: 150px;
+        width: 100%;      
+    }
+    .div2 img {
+        height: 150px;
+        width: 100%;      
+    }
+    .div3 img {
+        height: 150px;
+        width: 100%;      
+    }
+    .div4 img {
+        height: 150px;
+        width: 100%;      
+    }
+    .div5 img {
+        height: 150px;
+        width: 100%;      
+    }
+    .div6 img {
+        height: 150px;
+        width: 100%;      
+    }
     footer {
         display: flex;
         flex-direction: column;
