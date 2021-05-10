@@ -27,31 +27,37 @@ header {
 }
 
 .menu {
-    width: 35%;
+    width: 33%;
     display: flex;   
     justify-content: space-around;
     align-items: flex-end;
 }
 
-.menu a:hover {
+.hostingsActive {
     color: #0065FC;
     border-top: solid 3px #0065FC;
 }
 
+.menu a:hover {
+    color: #0065fc;
+}
+
 .menuHostings {
-    padding-bottom: 28px;
+    padding-bottom: 29px;
     display: flex;
     align-items: flex-end;  
     height: 100%; 
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .menuActivities{
-    padding-bottom: 28px;
+    padding-bottom: 29px;
     display: flex;
     align-items: flex-end;  
     height: 100%; 
 }
 .menuRegister {    
-    padding-bottom: 28px;
+    padding-bottom: 29px;
     display: flex;
     align-items: flex-end;  
     height: 100%; 
@@ -508,6 +514,12 @@ footer {
 }
 @media screen and (max-width: 1024px) {
 
+    body {
+        margin: 0;
+    }
+    header {
+        padding: 0;
+    }
     .mainContent {
         margin: 0;
     }
@@ -651,7 +663,7 @@ footer {
     }
 
     #activities {
-        padding-left: 2.5rem;
+        padding-left: 1.5rem;
     }
     .parent {
         display: flex;
@@ -734,5 +746,6 @@ footer {
         display: flex;
         flex-direction: column;
         width: 100%;
+        padding-left: 40px;
     }
 }
