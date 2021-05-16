@@ -252,7 +252,7 @@ footer a:hover {
 .hosting h3 {
     margin-top: 0;
     margin-bottom: 0;   
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: bold;
 
 }
@@ -276,7 +276,7 @@ footer a:hover {
 }
 
 .popular h3 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     margin-top: 0;
     margin-bottom: 0;
     font-weight: bold;
@@ -289,7 +289,6 @@ footer a:hover {
 }
 .popularCards {
     padding: 0px 20px;
-    margin-top: 0.5rem;
 }
 .popularTitle {
     font-size: 1.2rem;
@@ -308,7 +307,7 @@ footer a:hover {
 { 
     display: flex;
     min-width: 210px;
-    height: 27%;
+    height: 165px;
     background-color: white;
     border-radius: 25px;
     flex-direction: row;
@@ -512,13 +511,6 @@ footer {
     .mainContent {
         margin: 0 35px;
     }
-    .cardHosting {
-        height: 240px;
-       width: 35%;
-    }
-    .popularHosting {
-        height: 240px;
-    }
 }
 @media screen and (max-width: 1024px) {
 
@@ -635,6 +627,7 @@ footer {
     .popularTitle {
         padding-left: 1rem;
         padding-right: 2rem;
+        justify-content: space-between;
     }
 
     .popularCards {
