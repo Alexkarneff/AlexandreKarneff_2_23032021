@@ -491,11 +491,17 @@ footer a:hover {
 
 
 
-.footertext {
+.footerText {
+    display: flex;
+    flex-direction: column;
     margin-right: 2rem;
     margin-bottom: 1rem;
     flex: 1;
 
+}
+
+.footerText a {
+    margin-bottom: 1rem;
 }
 footer {
     display: flex;
