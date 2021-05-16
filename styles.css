@@ -327,7 +327,6 @@ footer a:hover {
 
 .more {
     padding-bottom: 0;
-    padding-top: 1rem;
     font-weight: bold;
 }
 .mainHosting {
@@ -478,7 +477,7 @@ footer a:hover {
     .titleActivity {
         height: 55px;
         padding-top: 5px;
-        padding-left: 2.5rem;
+        padding-left: 1.5rem;
         display: flex;
         align-items: center;
     }
@@ -490,12 +489,17 @@ footer a:hover {
 
 
 
-.footertext {
+.footerText {
+    display: flex;
+    flex-direction: column;
     margin-right: 2rem;
     margin-bottom: 1rem;
     flex: 1;
-
 }
+.footerText a {
+    margin-bottom: 1rem;
+}
+
 footer {
     display: flex;
     flex-direction: row;
@@ -576,11 +580,12 @@ footer {
     }
    
     .research {
-        padding: 0rem 0rem 1.5rem 1.5rem ;
+        padding: 0;
+        margin-left: 1rem;
     }
 
     .searchText {
-        width: 75%;
+        width: 70%;
     }
     .searchButton {
         display: none;
@@ -608,20 +613,20 @@ footer {
     }
 
     .available {
-        margin-left: 1.5rem;
+        margin-left: 1.2rem;
     }
 
-    .hosting {
-        padding: 40px 0px 20px 40px;
-    }
+
     .mainHosting {
         flex-direction: column;
+        margin-bottom: 1rem;
     }
 
     .popular {
         width: 100%;     
         border-radius: 0px;  
-        padding-left: 1.5rem;
+        padding:40px 0px 20px 0px;
+
     }
 
     .popularTitle {
@@ -630,8 +635,12 @@ footer {
         justify-content: space-between;
     }
 
+    .popularHosting {
+        margin-top: 1rem;
+    }
     .popularCards {
-        width: 96%;
+        margin-top: 1rem;
+        width: 87%;
         justify-content: center;
     }
 
@@ -640,38 +649,48 @@ footer {
     }
 
     .hosting {
-        padding: 40px 0px 0px 40px;
-        width: 100%;
+        margin-top: 3rem;
+        padding: 0;
+        width: 95%;
         background-color: transparent;       
     }
 
+    .hosting h3 {
+        margin-left: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+
     .hostingCards {
-        width: 98%;
+        width: 95%;
         justify-content: center;
         display: flex;
         flex-direction: column;
+        margin-left: 1.2rem;
     }
 
     .cardHosting {
+        margin-top: 0;
         width: 98%;
     }
     .infoHosting {
         font-size: 1.2rem;
     }
     .more {
+        margin-left: 1.2rem;
         font-size: 1.3rem;
     }
 
     #activities {
-        padding-left: 1.5rem;
+        margin-left: 1.2rem;
     }
     .parent {
         display: flex;
         flex-direction: column;
+        margin-top: 2rem;
       }
 
       .div1 {  
-        width: 98%;
+        width: 95%;
         display: flex;
         flex-direction: column;
         box-shadow: 0 0 16px #0000002e;
@@ -680,7 +699,7 @@ footer {
     }
 
     .div2 {  
-        width: 98%;
+        width: 95%;
         display: flex;
         flex-direction: column;
         box-shadow: 0 0 16px #0000002e;
@@ -688,7 +707,7 @@ footer {
         margin-bottom: 2rem;
     }
     .div3 {
-        width: 98%;
+        width: 95%;
          display: flex;
          flex-direction: column;
          box-shadow: 0 0 16px #0000002e;
@@ -696,7 +715,7 @@ footer {
          margin-bottom: 2rem;
         }
     .div4 { 
-        width: 98%;
+        width: 95%;
         display: flex;
         flex-direction: column;
         box-shadow: 0 0 16px #0000002e;
@@ -704,7 +723,7 @@ footer {
         margin-bottom: 2rem;
     }
     .div5 { 
-        width: 98%;
+        width: 95%;
         display: flex;
         flex-direction: column;
         box-shadow: 0 0 16px #0000002e;
@@ -712,7 +731,7 @@ footer {
         margin-bottom: 2rem;
     }
     .div6 { 
-        width: 98%;
+        width: 95%;
         display: flex;
         flex-direction: column;
         box-shadow: 0 0 16px #0000002e;
@@ -746,6 +765,9 @@ footer {
         display: flex;
         flex-direction: column;
         width: 100%;
-        padding-left: 40px;
+        padding: 20px 0px 0px 0px;
+    }
+    .footerText {
+        margin-left: 1.2rem;
     }
 }
