@@ -27,7 +27,7 @@ header {
 }
 
 .menu {
-    width: 33%;
+    width: 40%;
     display: flex;   
     justify-content: space-around;
     align-items: flex-end;
@@ -515,8 +515,14 @@ footer {
     .mainContent {
         margin: 0 35px;
     }
+    
+    @media screen and (max-width: 1188px ) {
+        .popularHosting {
+            margin-top: 5rem;
+            height: 25%;
+        }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 984px) {
 
     body {
         margin: 0;
@@ -581,7 +587,7 @@ footer {
    
     .research {
         padding: 0;
-        margin-left: 1rem;
+        margin-left: 5%;
     }
 
     .searchText {
@@ -604,7 +610,7 @@ footer {
     }
 
     .filters {
-        margin-left: 1.5rem;
+        margin-left: 5%;
     }
     .titleFilters  {
         width: 100%;
@@ -613,7 +619,7 @@ footer {
     }
 
     .available {
-        margin-left: 1.2rem;
+        margin-left: 5%;
     }
 
 
@@ -626,17 +632,18 @@ footer {
         width: 100%;     
         border-radius: 0px;  
         padding:40px 0px 20px 0px;
-
+        
     }
 
     .popularTitle {
-        padding-left: 1rem;
+        margin-left: 1rem;
         padding-right: 2rem;
         justify-content: space-between;
     }
 
     .popularHosting {
         margin-top: 1rem;
+        height: 165px;
     }
     .popularCards {
         margin-top: 1rem;
@@ -656,7 +663,7 @@ footer {
     }
 
     .hosting h3 {
-        margin-left: 1.2rem;
+        margin-left: 5%;
         margin-bottom: 1.5rem;
     }
 
@@ -665,7 +672,7 @@ footer {
         justify-content: center;
         display: flex;
         flex-direction: column;
-        margin-left: 1.2rem;
+        margin-left: 5%;
     }
 
     .cardHosting {
@@ -676,12 +683,12 @@ footer {
         font-size: 1.2rem;
     }
     .more {
-        margin-left: 1.2rem;
+        margin-left: 5%;
         font-size: 1.3rem;
     }
 
     #activities {
-        margin-left: 1.2rem;
+        margin-left: 5%;
     }
     .parent {
         display: flex;
@@ -768,6 +775,6 @@ footer {
         padding: 20px 0px 0px 0px;
     }
     .footerText {
-        margin-left: 1.2rem;
+        margin-left: 10%;
     }
 }
