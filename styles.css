@@ -180,20 +180,6 @@ footer a:hover {
     margin-left: 0.5rem;
     padding-bottom: 2rem;
 }
-.available i {
-    color: #0065FC;
-    display: flex;
-    font-size: 13px;
-    width: 15px;
-    height: 15px;
-    border: 2px solid #d9d9d9;
-    border-radius: 100%;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
-    margin-right: 10px;
-    
-}
 
 .infotxt {
     padding: 5px;
@@ -211,9 +197,8 @@ footer a:hover {
     display: flex; 
   }
 
-.mainFilters :hover {
- background-color: #f2f2f2;
- border-radius: 25px;
+.mainFilters p:hover {
+ color: #0065FC;
 }
 
 .filter {
@@ -236,10 +221,24 @@ footer a:hover {
     border-radius: 34px;
     position: relative;
     right: 0px;
-    bottom: 2px;
+    bottom: 4px;
 
   }
 
+  .available i {
+    color: #0065FC;
+    display: flex;
+    font-size: 13px;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #d9d9d9;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin-right: 10px;
+    
+}
 .hosting {
     width: 60%;
     background-color: #F2F2F2 ;
